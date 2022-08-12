@@ -1,4 +1,4 @@
-# LiDAR and Camera Sensor fusion for Vehicle detection and Tracking
+# LiDAR-Camera Sensor fusion for Vehicle detection and Tracking
 
 ![Demo](https://github.com/nsteve2407/nd013-c2-fusion-starter/blob/main/img/demo.gif)
 
