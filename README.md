@@ -6,9 +6,10 @@ This project implements LiDAR and Camera late fusion approach for object detecti
 
 #### 2D Object Detector
 2D object detections are made using an SSD Detector trained on the Waymo Open Dataset. Currently only using detections for vehicles.
-
+![2ddet](https://github.com/nsteve2407/lidar_cam_fusion/blob/master/img/camera-detector.png)
 #### Lidar Detector
 [Complex YOLO](https://github.com/maudzung/Complex-YOLOv4-Pytorch) is used to detect vehicles in the LIDAR BEV space. The model was pretrained on the KITTI dataset.
+![lidar-det](https://github.com/nsteve2407/lidar_cam_fusion/blob/master/img/lidar-detector.png)
 
 #### Fusion and Tracking
 Fusion is done using an EKF with a constant velocity motion model. All detections are in the vehicle frame of refernce. Camera intrinsic parameters are used to transform predicted tracks into the pixel coordinate frame. Since this is a nonlinear measurement function we linearize the function at the state mean value by calculating the jacobian matrix. Initial results from Camera and Lidar fused detections on the Waymo Open Dataset are shown below:
