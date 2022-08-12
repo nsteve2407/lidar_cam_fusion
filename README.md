@@ -1,7 +1,6 @@
 # LiDAR-Camera Sensor fusion for Vehicle detection and Tracking
 
-![Demo](https://github.com/nsteve2407/nd013-c2-fusion-starter/blob/main/img/demo.gif)
-
+![Demo](https://github.com/nsteve2407/lidar_cam_fusion/blob/master/img/demo.gif)
 This project implements LiDAR and Camera late fusion approach for object detection. Camera images are used for generating 2D detections using an SSD detector trained on the Waymo Open Dataset. Vehicles are detected in the LiDAR point clouds using the Complex YOLO detection framework. An Extented Kalman Filter (EKF) is used to fuse measurements from both these sensors to enable multi-target detection and traking.
 
 #### 2D Object Detector
